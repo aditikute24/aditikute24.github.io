@@ -12,12 +12,27 @@
     })
 })();
 
-document.querySelector('.right-contact form').addEventListener('submit', function(event) {
+document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
-    // Perform any additional actions here, e.g., validation, custom API call, etc.
+    const formData = new FormData(this);
 
-    // After custom actions, you can submit the form programmatically if needed
-    event.target.submit();
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Form submitted successfully!');
+        } else {
+            alert('There was an error submitting the form.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
+    });
 });
+
 
