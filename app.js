@@ -26,7 +26,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         if (data.success) {
             alert('Form submitted successfully!');
         } else {
-            alert('There was an error submitting the form.');
+            alert('There was an error submitting the form: ' + data.message);
         }
     })
     .catch(error => {
