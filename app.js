@@ -34,5 +34,3 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         alert('There was an error submitting the form.');
     });
 });
-
-
