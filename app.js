@@ -11,3 +11,4 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+    document.getElementById("year").textContent = new Date().getFullYear();
