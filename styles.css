@@ -1071,4 +1071,36 @@ footer .copyright {
   }
 }
 
+button{
+  background: transparent;
+  font-family: 'Courier New', Courier, monospace;
+  color: hsla(137, 82%, 49%, 0.897);
+  font-weight: 400;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: 2px solid #27AE60;
+  border-radius: 32px;
+  transform:translate(0);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button::before{
+  content: "";
+  position: absolute;
+  background: #27AE60;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  left: -32px;
+  transform: rotate(-16deg);
+  filter: blur(6px);
+}
+
+button:hover::before{
+  left: calc(100% + 32px);
+  transition: 0.75s;
+}
+
+
 /*# sourceMappingURL=styles.css.map */
