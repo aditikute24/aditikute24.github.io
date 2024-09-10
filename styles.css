@@ -145,6 +145,22 @@ section {
   color: var(--color-white);
 }
 
+/* Neon Effect for Controls */
+.controls .control:hover {
+    box-shadow: 0px 0px 10px rgba(151, 243, 255, 1), 
+                0px 0px 20px rgba(151, 243, 255, 1), 
+                0px 0px 30px rgba(151, 243, 255, 1), 
+                0px 0px 40px rgba(151, 243, 255, 0.7);
+    border-color: rgba(151, 243, 255, 1);
+}
+
+.controls .control:active {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 5px rgba(151, 243, 255, 1), 
+                0px 0px 15px rgba(151, 243, 255, 1);
+}
+
+
 .theme-btn {
   top: 5%;
   right: 3%;
@@ -168,6 +184,28 @@ section {
   color: var(--color-grey-2);
   pointer-events: none;
 }
+
+/* Neon Effect */
+.theme-btn:hover {
+    box-shadow: 0px 0px 10px rgba(151, 243, 255, 1), 
+                0px 0px 20px rgba(151, 243, 255, 1), 
+                0px 0px 30px rgba(151, 243, 255, 1), 
+                0px 0px 40px rgba(151, 243, 255, 0.7);
+    border-color: rgba(151, 243, 255, 1);
+}
+
+.theme-btn i {
+    font-size: 1.4rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
+}
+
+.theme-btn:active {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 5px rgba(151, 243, 255, 1), 
+                0px 0px 15px rgba(151, 243, 255, 1);
+}
+
 
 /*Header-content*/
 .header-content {
