@@ -11,4 +11,16 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+
+ document.addEventListener('visibilitychange',
+        function(){
+            if(document.visibilityState === "visible"){
+                document.title = "Portfolio | Aditi Kute";
+                $("#favicon").attr("href","favicon.png");
+            }
+            else {
+                document.title = "Come Back To Portfolio🙏";
+            }
+        });
+
     document.getElementById("year").textContent = new Date().getFullYear();
