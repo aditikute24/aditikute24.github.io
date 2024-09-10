@@ -20,6 +20,7 @@
             }
             else {
                 document.title = "Come Back To Portfolio🙏";
+                $("#favicon").attr("href","favhand.png");
             }
         });
 
